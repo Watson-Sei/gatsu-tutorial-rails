@@ -1,0 +1,6 @@
+<% @articles.each do |article| %>
+    <div>
+        <%= link_to article.title, article_path(article.id) %>
+    </div>
+<% end %>
+<%= link_to '新規登録', new_article_path %>
